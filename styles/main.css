@@ -1,0 +1,491 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;900&display=swap');
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-y: scroll;
+    background-color: #0c0b34; /* Navy blue background */
+    font-family: Abcdiatype, Arial,sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+/* Launch page heading */
+#main-heading {
+    height: 100vh;
+    display: flex; /* Use flex to center content */
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem; /* Increase the font size */
+    color: #ff8cd1; /* Apply the pink color */
+    border-bottom: 1px solid  #0c0b34;
+    text-align: center; /* Center text if it wraps */
+    padding: 20px; /* Add padding for breathing space */
+    line-height: 1.2; /* Adjust line height if needed */
+}
+
+.shimmer {
+    animation: shimmer 10s infinite linear;
+    background: linear-gradient(90deg, #ff8cd1, #fed8ff, #ff5ebf, #ff8cd1);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Smoother shimmer animation */
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0c0b34;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between; /* Evenly space elements across the navbar */
+    align-items: center;
+}
+
+/* Nav Button Styles */
+nav a {
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px; /* Rounded corners */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+
+nav a:hover {
+    color: #02004b; /* Navy on hover */
+    background-color: #ff8cd1;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0c0b34;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-top: 5px;
+    z-index: 20;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    border: none;
+    text-align: left;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.dropdown-content a:hover {
+    background-color:#212056;
+    color: #ff8cd1;
+    border-radius: 20px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: #ff8cd1;
+    color: #0c0b34;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1000;
+}
+
+#backToTop.show {
+    opacity: 1;
+}
+
+
+
+
+
+/* SECTION STYLES */
+
+
+
+
+
+
+/* ABOUT SECTION STYLES */
+#about-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Moves content to the bottom */
+    align-items: flex-start; /* Ensures text remains left-aligned */
+    padding: 60px; /* Consistent side margins */
+    box-sizing: border-box;
+    margin-left: 110px;
+}
+
+/* Bold and left-align section headers */
+#about-section .section-heading {
+    font-weight: bold;
+    font-size: 9rem; /* Adjust as needed */
+    margin-left: 5px;
+    margin-bottom: 10px; /* Reduce space between header and paragraph */
+    color: white;
+}
+
+/* About section paragraph styles */
+#about-section p {
+    font-size: 2rem;
+    margin-top: 5;
+    max-width: 95%;
+    line-height: 1.5;
+    color: white; /* Ensure contrast with background */
+    text-align: justify;
+}
+
+#about-section p2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 5;
+    max-width: 95%;
+    line-height: 1.5;
+    color: white; /* Ensure contrast with background */
+}
+
+/* HOME VIDEO */
+.home-video-container {
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove default margin */
+    position: relative;
+    overflow: hidden;
+    border-radius: 0; /* Optional: remove rounding if you want full bleed */
+}
+
+.home-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Who Am I Section - Right-aligned Stacked Layout */
+#who-am-i-section {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center elements vertically */
+    align-items: flex-end; /* Align content to the right */
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: right; /* Align text content */
+}
+
+/* Heading Styling */
+#who-am-i-section .section-heading {
+    font-weight: bold;
+    font-size: 7rem;
+    margin-bottom: 20px;
+    max-width: 60%; /* Control width */
+    margin-right: 50px;
+}
+
+#who-am-i-section h4 {
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    max-width: 60%; /* Control width */
+    margin-right: 50px;
+    color: #ff8cd1;
+}
+
+
+/* Text Styling */
+#who-am-i-section p {
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 39%;
+    line-height: 1.5;
+    color: white;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.who-am-i-img {
+    width: 500px;         /* Adjust this value to make it smaller or larger */
+    max-width: 100%;      /* Keeps it responsive */
+    height: auto;         /* Maintains aspect ratio */
+    margin-top: 20px;     /* Optional: adds spacing above the image */
+    display: block;
+    margin-right: 50px; 
+}
+
+#consider p {
+        font-size: 3rem;
+        max-width: 100%;
+        font-weight: bold;
+        line-height: 1.5;
+        color: white;
+        padding: 50px;
+        text-align: left; /* This aligns text inside the paragraph */
+        margin-right: 1100px;
+    }
+
+
+/* What is UI - section styles */
+#what-is-ui-section {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Changed from bottom to center for consistency */
+    text-align: center;
+    font-size: 2rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+}
+
+/* Heading styles */
+#what-is-ui-section .section-heading {
+    font-size: 7rem;
+    font-weight: bold;
+    margin-bottom: 50px; /* Ensures spacing between heading & columns */
+    width: 100%; /* Ensures full width for proper alignment */
+    color: white;
+    text-align: center;
+}
+
+
+/* DESIGN THAT */
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 5px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    height: 70px; /* Adjust based on your design */
+    margin-top: 10px; /* Space between h2 and carousel */
+    margin-bottom: 100px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+.carousel-wrapper {
+    display: flex;
+    gap: 50px; /* Space between words */
+    transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+.carousel-item {
+    color:#ff8cd1;
+    font-size: 5rem;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(50px); /* Start position (off-screen) */
+    transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#what-is-ui-section p {
+    font-size: 1em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    text-align: justify;
+}
+
+#what-is-ui-section p2 {
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+
+/* Container for the columns */
+#what-is-ui-section .columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%; /* Wider layout */
+    gap: 90px; /* More breathing space between columns */
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Individual column styles */
+#what-is-ui-section .column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px; /* Let it fill available space naturally */
+    padding: 20px;
+    text-align: justify;
+
+}
+
+/* Responsive design: stack columns on small screens */
+@media (max-width: 768px) {
+    #what-is-ui-section .columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #what-is-ui-section .column {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+
+/* Where UI is applied - Section Specific Styles */
+#where-used-section {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align heading to the top */
+    padding: 40px; /* Consistent side margins */
+    box-sizing: border-box;
+    text-align: center;
+    border:10px solid #0c0b34;
+}
+
+/* Bold and left-align section headers */
+#where-used-section .section-heading {
+    font-weight: bold;
+    font-size: 7rem; /* Adjust as needed */
+    position: relative;  /* Needed for precise positioning */
+    color: white;
+    justify-content: flex-start; /* Align heading to the top */
+    margin-top: 100px;
+}
+
+/* About section paragraph styles */
+#where-used-section p {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ff8cd1;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subheadings-container {
+    position: relative; /* not absolute anymore */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+
+.subheading {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.6s ease-out;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ff8cd1;
+    margin-top: 200px;
+    white-space: nowrap;
+}
+
+/* Add a class when activated */
+.subheading.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.subheading-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Start hidden by default */
+.subheading-blurb {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+    background-color: #0c0b34;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: justify;
+    text-align: center;
+    max-width: 800px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    z-index: 10;
+
+    /* Don’t let it fade in just on hover until visible */
+    display: none;
+}
+
+/* Make the blurb hoverable ONLY after subheading is visible */
+.subheading.visible + .subheading-blurb {
+    display: block;
+}
+
+/* Hover-triggered appearance */
+.subheading-wrapper:hover .subheading.visible + .subheading-blurb {
+    opacity: 1;
+    transform: translateY(0);
+}
+

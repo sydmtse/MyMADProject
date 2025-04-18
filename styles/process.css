@@ -1,0 +1,69 @@
+
+
+/* LAB WORK SECTION STYLES */
+#lab-work-section {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    padding: 80px; /* Consistent side margins */
+    box-sizing: border-box;
+    margin-top: 250px;
+    align-content: top;
+}
+
+#lab-work-section .section-heading h2 {
+    font-weight: bold;
+    font-size: 7rem; /* Adjust as needed */
+    margin-bottom: 10px; /* Reduce space between header and paragraph */
+    color: white;
+    text-align: center;
+}
+
+#lab-work-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white; /* Ensure contrast with background */
+    text-align: center;
+}
+
+.lab-weeks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* spacing between toggle sections */
+    align-items: center;
+    margin-left:200px;
+    margin-top: 80px;
+  }
+  
+  .week-section {
+    width: 90%; /* or 100% if you want full width */
+  }
+  
+  .toggle-btn {
+    border: 2px solid #ff8cd1;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #07063d;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+.toggle-btn:hover {
+    color: #02004b; /* Navy on hover */
+    background-color: #ff8cd1;
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.toggle-content.open {
+    max-height: 500px; /* big enough for your content */
+    padding: 20px;
+}

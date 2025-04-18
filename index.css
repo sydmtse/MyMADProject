@@ -1,0 +1,69 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    background-color: #0c0b34; /* Navy blue background */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Set default font */
+    scroll-behavior: smooth;
+    color: white;
+}
+
+/* Launch page heading */
+#main-heading {
+    height: 100vh;
+    display: flex; /* Use flex to center content */
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7rem; /* Increase the font size */
+    color: #ff8cd1; /* Apply the pink color */
+    border-bottom: 1px solid  #0c0b34;
+    text-align: center; /* Center text if it wraps */
+    padding: 20px; /* Add padding for breathing space */
+    line-height: 1.2; /* Adjust line height if needed */
+}
+
+.shimmer {
+    animation: shimmer 10s infinite linear;
+    background: linear-gradient(90deg, #ff8cd1, #fed8ff, #ff5ebf, #ff8cd1);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Smoother shimmer animation */
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* About Section Specific Styles */
+#about-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align heading to the top */
+    padding: 40px; /* Consistent side margins */
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+}
+
+/* Bold and left-align section headers */
+#about-section .section-heading {
+    font-weight: bold;
+    font-size: 1rem; /* Adjust as needed */
+    margin-top: 5;
+    margin-bottom: 10px; /* Reduce space between header and paragraph */
+}
+
+/* About section paragraph styles */
+#about-section p {
+    font-size: 0.8rem;
+    margin-top: 5;
+    max-width: 90%;
+    line-height: 1.5;
+    color: white; /* Ensure contrast with background */
+}
