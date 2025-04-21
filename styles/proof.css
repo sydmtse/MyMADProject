@@ -1,5 +1,24 @@
 
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 20px;
+  background-color: #ff8cd1;
+  color: #0c0b34;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 1000;
+}
 
+#backToTop.show {
+  opacity: 1;
+}
 
 
 /* Proof SECTION STYLES */
@@ -25,73 +44,223 @@
     text-align: left;
 }
 
+.quote-section {
+  margin-bottom: 100px;
+
+}
+
 #proof-section q {
-    font-size: 3rem; /* Adjust as needed */
+    font-size: 5rem; /* Adjust as needed */
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 10px;
+    max-width: 90%;
     color:#ff8cd1;
 }
 
-#proof-section p2 {
-    font-size: 1.5rem;
-    max-width: 90%;
-    margin-bottom: 60px;
-    line-height: 1.5;
-    text-align: left;
-    font-style: italic
+#proof-section .right-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  line-height: 1.5;
+  color: white; /* Ensure contrast with background */
+  text-align: justify;
+  margin-left: 1px;
 }
 
 #proof-section p {
-    font-size: 1.5rem;
-    max-width: 90%;
-    margin-right:100px;
+    font-size: 2rem;
+    max-width: 70%;
+    margin-top: 50px;
     margin-inline-start: centre;
     line-height: 1.5;
     color: white; /* Ensure contrast with background */
     text-align: justify;
+    align-items: center;
+    margin-left: 250px;
 }
+
+
+
+
+
 
 /* Academic backing SECTION STYLES */
 #academic-backing-section {
-    height: 100vh;
+    height: 250vh;
     display: fixed;
     flex-direction: column;
     justify-content: flex-end; /* Moves content to the bottom */
     align-items: flex-start; /* Ensures text remains left-aligned */
     padding: 80px; /* Consistent side margins */
     box-sizing: border-box;
-    margin-left: 90px;
+    margin-top: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 3rem;
+    
+}
+
+#academic-backing-section h2{
+  font-weight: bold;
+  font-size: 7rem; /* Adjust as needed */
+  margin-bottom: 100px; /* Reduce space between header and paragraph */
+  margin-left: 5px;
+  margin-top: 100px;
+  color: white;
+  text-align: left;
+
+}
+
+#academic-backing-section h3 {
+  font-weight: bold;
+  font-size: 5rem; /* Adjust as needed */
+  margin-bottom: 10px; /* Reduce space between header and paragraph */
+  margin-top: 20px;
+  color: white;
+}
+
+
+/* Left paragraph (Jony Ive) */
+.left-title {
+  font-weight: bold;
+  font-size: 5rem; /* Adjust as needed */
+  margin-bottom: 10px; /* Reduce space between header and paragraph */
+  margin-top: 20px;
+  color: white;
+}
+
+.left-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ffffff;
+  font-style: italic; /* Optional, if you want to differentiate it */
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  flex-wrap: wrap;
 }
 
 .left-paragraph {
-    display: flex;
-    justify-content: flex-start; /* Push content to the left */
-  }
-  
-  .left-paragraph p3 {
-    font-size: 1.5rem;
-    max-width: 45%;
-    line-height: 1.5;
-    text-align: justify;
-    margin-bottom: 150px;
-  }
-  
+  flex: 1;
+  font-size: 3rem;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: justify;
+  max-width: 47%;
+}
+
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 20%;
+  font-size: 3rem;
+  color:#ff8cd1;
+  margin-top: 330px;
+  text-align: justify;
+}
+
+
+.left-paragraph p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.jony-ive img {
+  width: 500px;          /* Make image smaller */
+  height: auto;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 250px;
+}
+
+
+
+
+/* Right paragraph (Jakob Nielson) */
+.right-title {
+  font-weight: bold;
+  font-size: 5rem; /* Adjust as needed */
+  margin-bottom: 10px; /* Reduce space between header and paragraph */
+  margin-top: 100px;
+  color: white;
+  margin-left: 1200px;
+}
+
+.right-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ffffff;
+  font-style: italic; /* Optional, if you want to differentiate it */
+  margin-left: 1200px;
+  margin-bottom: 50px;
+}
+
+.content-wrapper-2 {
+  display: flex;
+  flex-direction: row; /* ensure it's row layout */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
 
 .right-paragraph {
-    display: flex;
-    justify-content: flex-end; /* Push content to the right */
-  }
-  
-.right-paragraph p4 {
-    font-size: 1.5rem;
-    max-width: 50%;
-    line-height: 1.5;
-    text-align: justify;
-    margin-top: 300px;
-    margin-bottom: 200px;
-    margin-right: 50px;
-  }
+  flex: 1;
+  font-size: 3rem;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: justify;
+  max-width: 47%;
+}
+
+
+.text-block-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 20%;
+  font-size: 3rem;
+  color:#ff8cd1;
+  text-align: justify;
+  margin-top: 120px;
+}
+
+
+.right-paragraph p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.jakob-niel img {
+  width: 500px;          /* Make image smaller */
+  height: auto;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
 
 /* See more SECTION STYLES */
 #see-more-section {
@@ -103,22 +272,22 @@
     padding: 80px; /* Consistent side margins */
     box-sizing: border-box;
     margin-left: 90px;
+    margin-top: 100px;
 }
 
 /* Bold and left-align section headers */
 #see-more-section .section-heading {
     font-weight: bold;
-    font-size: 5rem; /* Adjust as needed */
-    margin-bottom: 2px; /* Reduce space between header and paragraph */
+    font-size: 7rem; /* Adjust as needed */
+    margin-bottom: 50px; /* Reduce space between header and paragraph */
+    margin-top: 100px;
     color: white;
 }
 
 #see-more-section p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     max-width: 90%;
-    margin-right:100px;
-    margin-bottom: 50px;
-    margin-inline-start: centre;
+    margin-top: 1px;
     line-height: 1.5;
     color: white; /* Ensure contrast with background */
 }
@@ -129,11 +298,13 @@
     justify-content: center; /* center the images horizontally */
     align-items: center;     /* align them vertically */
     flex-wrap: wrap;         /* allows them to wrap on smaller screens */
+    margin-top: 100px;
+    margin-bottom: 150px;
   }
 
 .linked-image {
     width: 500px; /* or whatever size you want */
-    height:500px;
+    height:600px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
@@ -144,7 +315,7 @@
   
   .linked-image-2 {
     width: 500px; /* or whatever size you want */
-    height:500px;
+    height:600px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
@@ -155,7 +326,7 @@
 
   .linked-image-3 {
     width: 500px; /* or whatever size you want */
-    height:500px;
+    height:600px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
@@ -166,7 +337,7 @@
   
   .linked-image-4 {
     width: 500px; /* or whatever size you want */
-    height:500px;
+    height:600px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
@@ -174,4 +345,5 @@
   .linked-image-4:hover {
     transform: scale(1.05); /* subtle zoom effect on hover */
   }
+
   
