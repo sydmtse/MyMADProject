@@ -20,13 +20,12 @@
   opacity: 1;
 }
 
-
-/* LAB WORK SECTION STYLES */
+/* LAB WORK SECTION */
 #lab-work-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 80px; /* Consistent side margins */
+    padding: 80px;
     box-sizing: border-box;
     margin-top: 250px;
     align-content: top;
@@ -34,8 +33,8 @@
 
 #lab-work-section .section-heading h2 {
     font-weight: bold;
-    font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 50px; /* Reduce space between header and paragraph */
+    font-size: 7rem; 
+    margin-bottom: 50px;
     color: white;
     text-align: center;
 }
@@ -46,7 +45,7 @@
     margin-bottom: 20px;
     margin-left: 290px;
     line-height: 1.2;
-    color: white; /* Ensure contrast with background */
+    color: white; 
     text-align: center;
 }
 
@@ -55,13 +54,13 @@
     margin-bottom: 20px;
     margin-left: 50px;
     line-height: 1.2;
-    color: white; /* Ensure contrast with background */
+    color: white;
     text-align: justify;
     max-width:75%;
 }
 
 ul {
-    list-style-type: circle; /* or disc, square, none */
+    list-style-type: circle;
     padding-left: 20px;
     color: white;
     font-size: 1.2rem;
@@ -69,18 +68,17 @@ ul {
 
   }  
 
-
 .lab-weeks {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* spacing between toggle sections */
+    gap: 20px;
     align-items: center;
     margin-left:200px;
     margin-top: 80px;
   }
   
   .week-section {
-    width: 90%; /* or 100% if you want full width */
+    width: 90%;
   }
   
   .toggle-btn {
@@ -97,7 +95,7 @@ ul {
   }
   
 .toggle-btn:hover {
-    color: #02004b; /* Navy on hover */
+    color: #02004b;
     background-color: #ff8cd1;
 }
 
@@ -105,7 +103,7 @@ ul {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.5s ease;
-    padding: 0 20px; /* Keep horizontal padding but not vertical */
+    padding: 0 20px;
     text-align: left;
     font-size: 1.5rem;
     color: #212056;
@@ -120,30 +118,30 @@ ul {
 
 .toggle-content h3 {
   font-weight: bold;
-  font-size: 2.5rem; /* Adjust as needed */
-  margin-bottom: 10px; /* Reduce space between header and paragraph */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
   margin-left: 40px;
   color:#ff8cd1;
   text-align: left;
 }
 
-
 .toggle-content.open {
-max-height: 5000px; /* adjust this value depending on how long your content gets */
+max-height: 5000px;
 padding: 20px;
 }
   
+/* IMAGES */
 .wireframe-img {
-    width: 800px;           /* Scales width to 200px */
-    height: auto;           /* Keeps aspect ratio */
+    width: 800px;        
+    height: auto;         
     margin-top: 20px;
     margin-left: 300px;
     align-items: flex-end;
   }
 
   .week7-img {
-    width: 1000px;           /* Scales width to 200px */
-    height: auto;           /* Keeps aspect ratio */
+    width: 1000px;     
+    height: auto;    
     margin-top: 20px;
     margin-left: 200px;
     align-items: flex-end;

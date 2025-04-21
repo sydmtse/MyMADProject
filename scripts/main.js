@@ -1,19 +1,19 @@
 
 const clickSound = document.getElementById("click-sound");
 
-  // Find all nav buttons (adjust the selector to fit your structure)
+// CLICK AUDIO
   const navButtons = document.querySelectorAll(".nav-button");
 
   navButtons.forEach(button => {
     button.addEventListener("click", () => {
-      const clickSound = new Audio("click.mp3"); // Create a fresh audio instance
+      const clickSound = new Audio("click.mp3"); 
       clickSound.play();
     });
   });
 
   
 
-// carousel animation
+// CAROSEL ANIMATION
 
 document.addEventListener("scroll", function () {
     let carouselItems = document.querySelectorAll(".carousel-item");
@@ -25,7 +25,7 @@ document.addEventListener("scroll", function () {
             setTimeout(() => {
                 item.style.opacity = "1";
                 item.style.transform = "translateX(0)";
-            }, index * 300); // Delay each item
+            }, index * 300); 
         });
     }
 });
@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const designThatBottom = designThatSection.offsetTop + designThatSection.offsetHeight;
         const whoAmIBottom = whoAmISection.offsetTop + whoAmISection.offsetHeight;
 
-        // Show image only after scrolling past the "design-that-section"
+      
         if (scrollPosition > designThatBottom) {
             whoAmIImage.classList.add("visible");
         } else {
             whoAmIImage.classList.remove("visible");
         }
 
-        // Prevent the image from scrolling past the "who-am-i-section"
+      
         let maxScroll = whoAmIBottom - window.innerHeight;
         if (scrollPosition >= maxScroll) {
             whoAmIImage.style.position = "absolute";
@@ -77,10 +77,9 @@ function revealSubheadings() {
 }
 
   
-
+// BACK TO TOP BTN
   const backToTopButton = document.getElementById('backToTop');
 
-  // Show button after scrolling down
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
       backToTopButton.classList.add('show');
@@ -89,7 +88,7 @@ function revealSubheadings() {
     }
   });
 
-  // Scroll to top when clicked
+ 
   backToTopButton.addEventListener('click', () => {
     window.scrollTo({
       top: 0,
@@ -104,9 +103,9 @@ function revealSubheadings() {
       if (entry.isIntersecting) {
         video.play();
       } else {
-        video.pause(); // Optional: pause when out of view
+        video.pause(); 
       }
     });
-  }, { threshold: 0.5 }); // Adjust this threshold to control when it triggers
+  }, { threshold: 0.5 }); 
 
   observer.observe(document.querySelector('.home-video-container'));

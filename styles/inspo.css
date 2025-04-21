@@ -20,14 +20,13 @@
   opacity: 1;
 }
 
-
-/* Inspiration SECTION STYLES */
+/* Inspiration SECTION */
 #inspiration-section {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Ensures text remains left-aligned */
-    padding: 80px; /* Consistent side margins */
+    align-items: flex-start; 
+    padding: 80px; 
     box-sizing: border-box;
     margin-left: 120px;
     margin-right: 120px;
@@ -35,19 +34,18 @@
     align-content: top;
 }
 
-/* Bold and left-align section headers */
 #inspiration-section .section-heading h2 {
     font-weight: bold;
-    font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 50px; /* Reduce space between header and paragraph */
+    font-size: 7rem; 
+    margin-bottom: 50px;
     margin-top: 5px;
     color:  white;
 }
 
 #inspiration-section .section-heading h3 {
     font-weight: bold;
-    font-size: 5rem; /* Adjust as needed */
-    margin-bottom: 10px; /* Reduce space between header and paragraph */
+    font-size: 5rem; 
+    margin-bottom: 10px;
     margin-top: 100px;
     margin-left:70px;
     color:#ff8cd1;
@@ -55,14 +53,13 @@
     max-width: 90%;
 }
 
-/* Dividing animation */
-/* HOME VIDEO */
+/* SHAPE VIDEO */
 .shapes-container {
-  width: 90vw; /* Full viewport width */
-  margin: 0; /* Remove default margin */
+  width: 90vw; 
+  margin: 0; 
   position: relative;
   overflow: hidden;
-  border-radius: 0; /* Optional: reove rounding if you want full bleed */
+  border-radius: 0;
   margin-left: 100px;
   margin-bottom: 200px;
   margin-top: 50px;
@@ -76,17 +73,14 @@
 }
 
 
-
-
-
-/* Good UI SECTION STYLES */
+/* Good UI SECTION */
 #good-ui-section {
     height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    align-items: flex-start; /* Ensures text remains left-aligned */
-    padding: 80px; /* Consistent side margins */
+    align-items: flex-start;
+    padding: 80px;
     box-sizing: border-box;
     margin-left: 90px;
     margin-top: 400px;
@@ -94,8 +88,8 @@
 
 #good-ui-section .section-heading h3 {
     font-weight: bold;
-    font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 80px; /* Reduce space between header and paragraph */
+    font-size: 7rem;
+    margin-bottom: 80px;
     margin-top: 50px;
     margin-left: 100px;
     color: white;
@@ -108,7 +102,7 @@
   margin-left: 100px;
   max-width: 70%
   line-height: 1.2;
-  color: white; /* Ensure contrast with background */
+  color: white;
   text-align: center;
 }
 
@@ -118,14 +112,14 @@
     margin-left: 45px;
     margin-bottom: 20px;
     line-height: 1.2;
-    color: white; /* Ensure contrast with background */
+    color: white;
     text-align: justify;
 }
 
 #good-ui-section .section-heading h4 {
     font-weight: bold;
-    font-size: 3rem; /* Adjust as needed */
-    margin-bottom: 10px; /* Reduce space between header and paragraph */
+    font-size: 3rem;
+    margin-bottom: 10px; 
     margin-top: 20px;
     color: white;
     margin-left: 45px;
@@ -133,8 +127,8 @@
 
 .point-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 100px; /* space between boxes */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 100px; 
     padding: 20px;
     max-width: 90%;
     margin: 0 auto;
@@ -146,10 +140,10 @@
   .point-box {
     padding: 40px;
     border-radius: 10px;
-    border: 2px solid #ff8cd1; /* ← this sets the width, style, and color */
+    border: 2px solid #ff8cd1; 
     font-size: 1.5rem;
     text-align: left;
-    color: white; /* Optional: to make text readable on dark background */
+    color: white; 
   }
   
   #good-ui-section p3 {
@@ -163,10 +157,9 @@
 
 
 
-
-/* compare & contrast SECTION STYLES */
+/* compare & contrast SECTION */
 #compare-contrast-section {
-  min-height: 100vh;           /* Ensure it covers at least full screen */
+  min-height: 100vh;       
   padding: 80px;
   display: flex;
   flex-direction: column;
@@ -177,8 +170,8 @@
 
 #compare-contrast-section .section-heading h3 {
     font-weight: bold;
-    font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 80px; /* Reduce space between header and paragraph */
+    font-size: 7rem; 
+    margin-bottom: 80px; 
     margin-top: 200px;
     color: white;
     margin-left: 20px;
@@ -188,7 +181,7 @@
 #compare-contrast-section p2 {
   font-size: 2rem;
   line-height: 1.2;
-  color: white; /* Ensure contrast with background */
+  color: white; 
   text-align: center;
   margin-left: 20px;
   margin-bottom: 50px;
@@ -206,7 +199,7 @@
 #compare-contrast-section p4 {
   font-size: 2rem;
   line-height: 1.2;
-  color: white; /* Ensure contrast with background */
+  color: white; 
   text-align: justify;
   margin-left: 180px;
   margin-right: 180px;
@@ -217,7 +210,7 @@
 #compare-contrast-section p {
     font-size: 1.5rem;
     line-height: 1.3;
-    color: white; /* Ensure contrast with background */
+    color: white; 
     text-align: center;
     font-weight: bold;
     padding: 5px;
@@ -229,6 +222,7 @@
   flex-wrap: wrap;
 }
 
+/* CARDS */
 .card-wrapper {
   display: flex;
   align-items: center;
@@ -236,7 +230,7 @@
   margin-bottom: 80px;
 }
 
-/* Make blurb-container float absolutely */
+/* BLURBS */
 .blurb-container {
   position: absolute;
   top: 50%;
@@ -244,19 +238,17 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  pointer-events: none; /* Let hover pass through unless needed otherwise */
+  pointer-events: none; 
 }
 
-/* Left blurbs positioned to the left */
 .blurb-container.left {
-  right: 100%; /* Position to the left of the card */
+  right: 100%;
   margin-right: 10px;
   align-items: center;
 }
 
-/* Right blurbs positioned to the right */
 .blurb-container.right {
-  left: 100%; /* Position to the right of the card */
+  left: 100%;
   margin-left: 10px;
   align-items: flex-start;
 }
@@ -267,21 +259,19 @@
   border-radius: 15px;
   font-size: 1rem;
   padding: 10px 10px;
-  width: 220px;            /* Keeps them consistent in size */
+  width: 220px;      
   opacity: 0;
   margin-bottom: 50px;
   transition: opacity 0.3s ease;
-  display: flex;                /* Full flex to control layout */
+  display: flex;              
   justify-content: center;
   align-items: center;
   text-align: justify;
   line-height: 1.2;
   word-wrap: break-word;
-  white-space: normal;          /* Allows wrapping */
+  white-space: normal;  
 }
 
-
-/* Hover effect: Show blurbs */
 .card-wrapper.before:hover .blurb-container.left .blurb,
 .card-wrapper.after:hover .blurb-container.right .blurb {
   opacity: 1;
@@ -289,9 +279,9 @@
   
 .card {
   padding: 2vw;
-  width: 40vw;               /* Responsive width */
-  max-width: 700px;          /* Don't exceed this on large screens */
-  height: auto;              /* Let height adjust to image + content */
+  width: 40vw;              
+  max-width: 700px;         
+  height: auto;       
   text-align: left;
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -327,166 +317,165 @@
 
 
 
-/* Resources SECTION STYLES */
+/* Resources SECTION */
 #resources-section {
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Ensures text remains left-aligned */
-    box-sizing: border-box;
-    margin-top: 600px;
-    text-align: left;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  box-sizing: border-box;
+  margin-top: 600px;
+  text-align: left;
 }
 
 #resources-section .section-heading h2 {
-    font-weight: bold;
-    font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 50px; /* Reduce space between header and paragraph */
-    margin-left: 260px;
-    margin-top: 150px;
-    color: white;
-    text-align: left;
+  font-weight: bold;
+  font-size: 7rem; 
+  margin-bottom: 50px; 
+  margin-left: 260px;
+  margin-top: 150px;
+  color: white;
+  text-align: left;
 }
 
 #resources-section p {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    margin-left: 260px;
-    line-height: 1.2;
-    color: white; /* Ensure contrast with background */
-    max-width: 80%;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 260px;
+  line-height: 1.2;
+  color: white; 
+  max-width: 80%;
 }
 
 #resources-section h3 {
   font-weight: bold;
-    font-size: 5rem; /* Adjust as needed */
-    margin-bottom: 10px; /* Reduce space between header and paragraph */
-    margin-left: 950px;
-    margin-top: 50px;
-    color: white;
-    text-align: center;
+  font-size: 5rem; 
+  margin-bottom: 10px; 
+  margin-left: 950px;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
 }
 
 #resources-section h4 {
   font-weight: bold;
-    font-size: 5rem; /* Adjust as needed */
-    margin-bottom: 10px; /* Reduce space between header and paragraph */
-    margin-left: 880px;
-    margin-top: 50px;
-    color: white;
-    text-align: center;
+  font-size: 5rem;
+  margin-bottom: 10px; 
+  margin-left: 880px;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
 }
 
-
+/* IMAGE LINKS */
 .inspo-row {
-    display: flex;
-    gap: 450px; /* adds space between the images */
-    justify-content: center; /* center the images horizontally */
-    align-items: center;     /* align them vertically */
-    flex-wrap: wrap;         /* allows them to wrap on smaller screens */
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 280px;
-    max-width:100%;
-  }
+  display: flex;
+  gap: 450px; 
+  justify-content: center; 
+  align-items: center;    
+  flex-wrap: wrap;    
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 280px;
+  max-width:100%;
+}
 
   .tools-row {
     display: flex;
-    gap: 60px; /* adds space between the images */
-    justify-content: center; /* center the images horizontally */
-    align-items: center;     /* align them vertically */
-    flex-wrap: wrap;         /* allows them to wrap on smaller screens */
+    gap: 60px; 
+    justify-content: center; 
+    align-items: center;   
+    flex-wrap: wrap;    
     margin-top: 50px;
     margin-left: 260px;
     max-width:100%;
   }
 
-
 .linked-image {
-  width: 350px; /* or whatever size you want */
+  width: 350px; 
   height:450px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
   
   .linked-image:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05);
   }
   
   .linked-image-2 {
-    width: 350px; /* or whatever size you want */
+    width: 350px;
     height:450px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
   
   .linked-image-2:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05); 
   }
 
   .linked-image-3 {
-    width: 350px; /* or whatever size you want */
+    width: 350px; 
     height:450px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
   
   .linked-image-3:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05); 
   }
   
   .linked-image-4 {
-    width: 350px; /* or whatever size you want */
+    width: 350px;
     height:450px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
   
   .linked-image-4:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05); 
   }
   
   .linked-image-5 {
-    width: 350px; /* or whatever size you want */
+    width: 350px;
     height:450px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
   
   .linked-image-5:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05); 
   }
   
   .linked-image-6 {
-    width: 350px; /* or whatever size you want */
+    width: 350px;
     height:450px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
   
   .linked-image-6:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05);
   }
   
   .linked-image-7 {
-    width: 350px; /* or whatever size you want */
+    width: 350px; 
     height:450px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
   
   .linked-image-7:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05); 
   }
   
   .linked-image-8 {
-    width: 350px; /* or whatever size you want */
+    width: 350px; 
     height:450px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
   
   .linked-image-8:hover {
-    transform: scale(1.05); /* subtle zoom effect on hover */
+    transform: scale(1.05); 
   }
   

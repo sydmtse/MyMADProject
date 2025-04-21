@@ -1,3 +1,4 @@
+
 /* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;900&display=swap');
 
@@ -5,7 +6,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     overflow-y: scroll;
-    background-color: #0c0b34; /* Navy blue background */
+    background-color: #0c0b34;
     font-family: Abcdiatype, Arial,sans-serif;
     scroll-behavior: smooth;
     color: white;
@@ -14,15 +15,15 @@ body {
 /* Launch page heading */
 #main-heading {
     height: 100vh;
-    display: flex; /* Use flex to center content */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    font-size: 5rem; /* Increase the font size */
-    color: #ff8cd1; /* Apply the pink color */
+    font-size: 5rem; 
+    color: #ff8cd1; 
     border-bottom: 1px solid  #0c0b34;
-    text-align: center; /* Center text if it wraps */
-    padding: 20px; /* Add padding for breathing space */
-    line-height: 1.2; /* Adjust line height if needed */
+    text-align: center; 
+    padding: 20px; 
+    line-height: 1.2; 
 }
 
 .shimmer {
@@ -33,7 +34,6 @@ body {
     color: transparent;
 }
 
-/* Smoother shimmer animation */
 @keyframes shimmer {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -50,7 +50,7 @@ nav {
     padding: 10px;
     z-index: 10;
     display: flex;
-    justify-content: space-between; /* Evenly space elements across the navbar */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -58,16 +58,15 @@ nav {
 nav a {
     color: #ffffff;
     padding: 8px 16px;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 20px; 
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
     margin-right: 15px;
 }
 
-
 nav a:hover {
-    color: #02004b; /* Navy on hover */
+    color: #02004b; 
     background-color: #ff8cd1;
 }
 
@@ -129,45 +128,36 @@ nav a:hover {
 }
 
 
-
-
-
 /* SECTION STYLES */
 
 
-
-
-
-
-/* ABOUT SECTION STYLES */
+/* ABOUT */
 #about-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Moves content to the bottom */
-    align-items: flex-start; /* Ensures text remains left-aligned */
-    padding: 60px; /* Consistent side margins */
+    justify-content: flex-end;
+    align-items: flex-start; 
+    padding: 60px; 
     box-sizing: border-box;
     margin-left: 150px;
 }
 
-/* Bold and left-align section headers */
 #about-section .section-heading {
     font-weight: bold;
-    font-size: 9rem; /* Adjust as needed */
+    font-size: 9rem; 
     margin-left: 5px;
-    margin-bottom: 10px; /* Reduce space between header and paragraph */
+    margin-bottom: 10px;
     margin-top: 250px;
     color: white;
 }
 
-/* About section paragraph styles */
 #about-section p {
     font-size: 2rem;
     margin-top: 5;
     max-width: 95%;
     line-height: 1.5;
-    color: white; /* Ensure contrast with background */
+    color: white; 
     text-align: justify;
 }
 
@@ -177,17 +167,16 @@ nav a:hover {
     margin-top: 20px;
     max-width: 95%;
     line-height: 1.5;
-    color: white; /* Ensure contrast with background */
+    color: white; 
 }
-
 
 /* HOME VIDEO */
 .home-video-container {
-    width: 100vw; /* Full viewport width */
-    margin: 0; /* Remove default margin */
+    width: 100vw; 
+    margin: 0; 
     position: relative;
     overflow: hidden;
-    border-radius: 0; /* Optional: remove rounding if you want full bleed */
+    border-radius: 0;
 }
 
 .home-video {
@@ -199,24 +188,23 @@ nav a:hover {
 
 
 
-/* Who Am I Section - Right-aligned Stacked Layout */
+/* WHO I AM */
 #who-am-i-section {
     height: 150vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center elements vertically */
-    align-items: flex-end; /* Align content to the right */
+    justify-content: center; 
+    align-items: flex-end; 
     padding: 40px;
     box-sizing: border-box;
-    text-align: right; /* Align text content */
+    text-align: right; 
 }
 
-/* Heading Styling */
 #who-am-i-section .section-heading {
     font-weight: bold;
     font-size: 7rem;
     margin-bottom: 20px;
-    max-width: 60%; /* Control width */
+    max-width: 60%; 
     margin-right: 120px;
 }
 
@@ -225,13 +213,11 @@ nav a:hover {
     font-size: 5rem;
     margin-bottom: 10px;
     margin-top: 5px;
-    max-width: 60%; /* Control width */
+    max-width: 60%; 
     margin-right: 120px;
     color: #ff8cd1;
 }
 
-
-/* Text Styling */
 #who-am-i-section p {
     font-size: 2rem;
     font-weight: bold;
@@ -244,10 +230,10 @@ nav a:hover {
 }
 
 .who-am-i-img {
-    width: 500px;         /* Adjust this value to make it smaller or larger */
-    max-width: 100%;      /* Keeps it responsive */
-    height: auto;         /* Maintains aspect ratio */
-    margin-top: 20px;     /* Optional: adds spacing above the image */
+    width: 500px;        
+    max-width: 100%;
+    height: auto;   
+    margin-top: 20px;     
     display: block;
     margin-right: 150px; 
 }
@@ -259,7 +245,7 @@ nav a:hover {
         line-height: 1.5;
         color: white;
         padding: 50px;
-        text-align: left; /* This aligns text inside the paragraph */
+        text-align: left; 
         margin-right: 1100px;
         margin-top: 50px;
         margin-left: 120px;
@@ -267,14 +253,12 @@ nav a:hover {
 
 
 
-
-
-/* What is UI - section styles */
+/* WHAT IS UI */
 #what-is-ui-section {
     height: 200vh;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Changed from bottom to center for consistency */
+    align-items: center;
     text-align: center;
     font-size: 2rem;
     padding-left: 2vw;
@@ -282,16 +266,14 @@ nav a:hover {
     justify-content: center;
 }
 
-/* Heading styles */
 #what-is-ui-section .section-heading {
     font-size: 7rem;
     font-weight: bold;
-    margin-bottom: 50px; /* Ensures spacing between heading & columns */
-    width: 100%; /* Ensures full width for proper alignment */
+    margin-bottom: 50px; 
+    width: 100%; 
     color: white;
     text-align: center;
 }
-
 
 /* DESIGN THAT */
 h2 {
@@ -304,12 +286,11 @@ h2 {
     color: white;
 }
 
-
 .carousel-container {
     position: relative;
     overflow: hidden;
-    height: 70px; /* Adjust based on your design */
-    margin-top: 100px; /* Space between h2 and carousel */
+    height: 70px; 
+    margin-top: 100px; 
     margin-bottom: 120px;
     margin-left: 80px;
     display: flex;
@@ -320,8 +301,8 @@ h2 {
 
 .carousel-wrapper {
     display: flex;
-    gap: 50px; /* Space between words */
-    transition: transform 1s ease-in-out; /* Smooth transition */
+    gap: 50px; 
+    transition: transform 1s ease-in-out;
 }
 
 .carousel-item {
@@ -329,7 +310,7 @@ h2 {
     font-size: 5rem;
     white-space: nowrap;
     opacity: 0;
-    transform: translateX(50px); /* Start position (off-screen) */
+    transform: translateX(50px);
     transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
 }
 
@@ -356,7 +337,7 @@ h2 {
 }
 
 #what-is-ui-section p2 {
-    font-size: 5rem; /* Adjust as needed */
+    font-size: 5rem;
     font-weight: bold;
     margin-top: 500px;
     margin-bottom: 50px;
@@ -378,29 +359,27 @@ h2 {
     margin-left: 90px
 }
 
-/* Container for the columns */
+/* COLUMNS */
 #what-is-ui-section .columns {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 90%; /* Wider layout */
-    gap: 10px; /* More breathing space between columns */
+    max-width: 90%; 
+    gap: 10px; 
     margin: 0 auto;
     text-align: justify;
     line-height: 1.5;
 }
 
-/* Individual column styles */
 #what-is-ui-section .column {
     flex: 1;
     min-width: 300px;
-    max-width: 800px; /* Let it fill available space naturally */
+    max-width: 800px; 
     padding: 20px;
     text-align: justify;
 
 }
 
-/* Responsive design: stack columns on small screens */
 @media (max-width: 768px) {
     #what-is-ui-section .columns {
         flex-direction: column;
@@ -415,31 +394,27 @@ h2 {
 }
 
 
-
-
-/* Where UI is applied - Section Specific Styles */
+/* WHERE IS UI USED */
 #where-used-section {
     height: 200vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align heading to the top */
-    padding: 40px; /* Consistent side margins */
+    justify-content: flex-start; 
+    padding: 40px; 
     box-sizing: border-box;
     text-align: center;
     border:10px solid #0c0b34;
     margin-top:150px;
 }
 
-/* Bold and left-align section headers */
 #where-used-section .section-heading {
     font-weight: bold;
-    font-size: 7rem; /* Adjust as needed */
-    position: relative;  /* Needed for precise positioning */
+    font-size: 7rem; 
+    position: relative;  
     color: white;
-    justify-content: flex-start; /* Align heading to the top */
+    justify-content: flex-start; 
     margin-top: 100px;
 }
-
 
 #where-used-section p {
     font-size: 2rem;
@@ -459,7 +434,7 @@ h2 {
 }
 
 .subheadings-container {
-    position: relative; /* not absolute anymore */
+    position: relative;
     width: 100%;
     height: auto;
     display: flex;
@@ -479,7 +454,6 @@ h2 {
     white-space: nowrap;
 }
 
-/* Add a class when activated */
 .subheading.visible {
     opacity: 1;
     transform: translateY(0);
@@ -492,7 +466,6 @@ h2 {
     align-items: center;
 }
 
-/* Start hidden by default */
 .subheading-blurb {
     opacity: 0;
     transform: translateY(10px);
@@ -511,16 +484,13 @@ h2 {
     margin-top: 10px;
     z-index: 10;
 
-    /* Don’t let it fade in just on hover until visible */
     display: none;
 }
 
-/* Make the blurb hoverable ONLY after subheading is visible */
 .subheading.visible + .subheading-blurb {
     display: block;
 }
 
-/* Hover-triggered appearance */
 .subheading-wrapper:hover .subheading.visible + .subheading-blurb {
     opacity: 1;
     transform: translateY(0);
