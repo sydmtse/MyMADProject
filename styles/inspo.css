@@ -29,8 +29,8 @@
     align-items: flex-start; /* Ensures text remains left-aligned */
     padding: 80px; /* Consistent side margins */
     box-sizing: border-box;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
     margin-top: 250px;
     align-content: top;
 }
@@ -95,7 +95,7 @@
 #good-ui-section .section-heading h3 {
     font-weight: bold;
     font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 50px; /* Reduce space between header and paragraph */
+    margin-bottom: 80px; /* Reduce space between header and paragraph */
     margin-top: 50px;
     margin-left: 100px;
     color: white;
@@ -178,7 +178,7 @@
 #compare-contrast-section .section-heading h3 {
     font-weight: bold;
     font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 50px; /* Reduce space between header and paragraph */
+    margin-bottom: 80px; /* Reduce space between header and paragraph */
     margin-top: 200px;
     color: white;
     margin-left: 20px;
@@ -200,7 +200,7 @@
   line-height: 1.2;
   color: #ff8cd1;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 #compare-contrast-section p4 {
@@ -208,9 +208,9 @@
   line-height: 1.2;
   color: white; /* Ensure contrast with background */
   text-align: justify;
-  margin-left: 20px;
+  margin-left: 180px;
+  margin-right: 180px;
   margin-bottom: 50px;
-  max-width: 75%;
 }
 
 
@@ -233,7 +233,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 /* Make blurb-container float absolutely */
@@ -334,14 +334,14 @@
     flex-direction: column;
     align-items: flex-start; /* Ensures text remains left-aligned */
     box-sizing: border-box;
-    margin-top: 400px;
+    margin-top: 600px;
     text-align: left;
 }
 
 #resources-section .section-heading h2 {
     font-weight: bold;
     font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 10px; /* Reduce space between header and paragraph */
+    margin-bottom: 50px; /* Reduce space between header and paragraph */
     margin-left: 260px;
     margin-top: 150px;
     color: white;

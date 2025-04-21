@@ -148,7 +148,7 @@ nav a:hover {
     align-items: flex-start; /* Ensures text remains left-aligned */
     padding: 60px; /* Consistent side margins */
     box-sizing: border-box;
-    margin-left: 110px;
+    margin-left: 150px;
 }
 
 /* Bold and left-align section headers */
@@ -157,6 +157,7 @@ nav a:hover {
     font-size: 9rem; /* Adjust as needed */
     margin-left: 5px;
     margin-bottom: 10px; /* Reduce space between header and paragraph */
+    margin-top: 250px;
     color: white;
 }
 
@@ -173,11 +174,12 @@ nav a:hover {
 #about-section p2 {
     font-size: 3rem;
     font-weight: bold;
-    margin-top: 5;
+    margin-top: 20px;
     max-width: 95%;
     line-height: 1.5;
     color: white; /* Ensure contrast with background */
 }
+
 
 /* HOME VIDEO */
 .home-video-container {
@@ -215,7 +217,7 @@ nav a:hover {
     font-size: 7rem;
     margin-bottom: 20px;
     max-width: 60%; /* Control width */
-    margin-right: 50px;
+    margin-right: 120px;
 }
 
 #who-am-i-section h4 {
@@ -224,7 +226,7 @@ nav a:hover {
     margin-bottom: 10px;
     margin-top: 5px;
     max-width: 60%; /* Control width */
-    margin-right: 50px;
+    margin-right: 120px;
     color: #ff8cd1;
 }
 
@@ -236,7 +238,7 @@ nav a:hover {
     max-width: 39%;
     line-height: 1.5;
     color: white;
-    margin-right: 50px;
+    margin-right: 120px;
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -247,7 +249,7 @@ nav a:hover {
     height: auto;         /* Maintains aspect ratio */
     margin-top: 20px;     /* Optional: adds spacing above the image */
     display: block;
-    margin-right: 50px; 
+    margin-right: 150px; 
 }
 
 #consider p {
@@ -259,11 +261,13 @@ nav a:hover {
         padding: 50px;
         text-align: left; /* This aligns text inside the paragraph */
         margin-right: 1100px;
+        margin-top: 50px;
+        margin-left: 120px;
     }
 
 
 
-    
+
 
 /* What is UI - section styles */
 #what-is-ui-section {
@@ -305,8 +309,8 @@ h2 {
     position: relative;
     overflow: hidden;
     height: 70px; /* Adjust based on your design */
-    margin-top: 10px; /* Space between h2 and carousel */
-    margin-bottom: 100px;
+    margin-top: 100px; /* Space between h2 and carousel */
+    margin-bottom: 120px;
     margin-left: 80px;
     display: flex;
     align-items: center;
@@ -342,19 +346,37 @@ h2 {
 
 #what-is-ui-section p {
     font-size: 1em;
+    line-height: 1.5;
     max-width: 90%;
     margin-bottom: 5px;
-    margin-top: 3px;
+    margin-top: 10px;
     text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #what-is-ui-section p2 {
-    font-size: 3rem; /* Adjust as needed */
+    font-size: 5rem; /* Adjust as needed */
     font-weight: bold;
-    margin-top: 200px;
+    margin-top: 500px;
     margin-bottom: 50px;
 }
 
+#what-is-ui-section p3 {
+    font-size: 1em;
+    max-width: 100%;
+    margin-top: 3px;
+    text-align: center;
+    margin-left: 150px
+}
+
+#what-is-ui-section p4 {
+    font-size: 1em;
+    max-width: 100%;
+    margin-top: 3px;
+    text-align: center;
+    margin-left: 90px
+}
 
 /* Container for the columns */
 #what-is-ui-section .columns {
@@ -362,7 +384,7 @@ h2 {
     justify-content: space-between;
     width: 100%;
     max-width: 90%; /* Wider layout */
-    gap: 90px; /* More breathing space between columns */
+    gap: 10px; /* More breathing space between columns */
     margin: 0 auto;
     text-align: justify;
     line-height: 1.5;
@@ -393,6 +415,8 @@ h2 {
 }
 
 
+
+
 /* Where UI is applied - Section Specific Styles */
 #where-used-section {
     height: 200vh;
@@ -403,6 +427,7 @@ h2 {
     box-sizing: border-box;
     text-align: center;
     border:10px solid #0c0b34;
+    margin-top:150px;
 }
 
 /* Bold and left-align section headers */
@@ -415,13 +440,22 @@ h2 {
     margin-top: 100px;
 }
 
-/* About section paragraph styles */
+
 #where-used-section p {
     font-size: 2rem;
     line-height: 1.5;
     color: #ff8cd1;
     text-align: center;
     margin-bottom: 5px;
+}
+
+#where-used-section p2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .subheadings-container {

@@ -1,8 +1,29 @@
 
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 20px;
+  background-color: #ff8cd1;
+  color: #0c0b34;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 1000;
+}
+
+#backToTop.show {
+  opacity: 1;
+}
+
 
 /* LAB WORK SECTION STYLES */
 #lab-work-section {
-    height: 200vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 80px; /* Consistent side margins */
@@ -14,23 +35,25 @@
 #lab-work-section .section-heading h2 {
     font-weight: bold;
     font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 10px; /* Reduce space between header and paragraph */
+    margin-bottom: 50px; /* Reduce space between header and paragraph */
     color: white;
     text-align: center;
 }
 
-.description {
-    font-size: 1.5rem;
+#lab-work-section p2 {
+    font-size: 2rem;
+    max-width: 75%;
     margin-bottom: 20px;
+    margin-left: 290px;
     line-height: 1.2;
     color: white; /* Ensure contrast with background */
-    text-align: justify;
+    text-align: center;
 }
 
 #lab-work-section p {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    margin-left:40px;
+    margin-left: 50px;
     line-height: 1.2;
     color: white; /* Ensure contrast with background */
     text-align: justify;
@@ -83,11 +106,30 @@ ul {
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.5s ease;
     padding: 0 20px; /* Keep horizontal padding but not vertical */
-    text-align: justify;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #212056;
+    margin-left: 150px;
 }
-  
+
+.toggle-content p {
+  font-size: 1rem;
+  color: #212056;
+  text-align: left;
+}
+
+.toggle-content h3 {
+  font-weight: bold;
+  font-size: 2.5rem; /* Adjust as needed */
+  margin-bottom: 10px; /* Reduce space between header and paragraph */
+  margin-left: 40px;
+  color:#ff8cd1;
+  text-align: left;
+}
+
+
 .toggle-content.open {
-max-height: 1000px; /* adjust this value depending on how long your content gets */
+max-height: 5000px; /* adjust this value depending on how long your content gets */
 padding: 20px;
 }
   
@@ -95,7 +137,7 @@ padding: 20px;
     width: 800px;           /* Scales width to 200px */
     height: auto;           /* Keeps aspect ratio */
     margin-top: 20px;
-    margin-left: 450px;
+    margin-left: 300px;
     align-items: flex-end;
   }
 
@@ -103,6 +145,6 @@ padding: 20px;
     width: 1000px;           /* Scales width to 200px */
     height: auto;           /* Keeps aspect ratio */
     margin-top: 20px;
-    margin-left: 350px;
+    margin-left: 200px;
     align-items: flex-end;
   }

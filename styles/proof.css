@@ -49,13 +49,17 @@
 
 }
 
-#proof-section q {
-    font-size: 5rem; /* Adjust as needed */
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    max-width: 90%;
-    color:#ff8cd1;
+#proof-section .quote-section q {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ff8cd1;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  max-width: 95%; /* Or 100%, or remove this line entirely */
+  display: block; /* Optional: helps apply max-width + margin properly */
+  margin-left: 20px;
+  margin-right: auto;
+  text-align: left; /* or left, depending on your design */
 }
 
 #proof-section .right-subtitle {
@@ -65,19 +69,19 @@
   line-height: 1.5;
   color: white; /* Ensure contrast with background */
   text-align: justify;
-  margin-left: 1px;
+  margin-left: 20px;
 }
 
 #proof-section p {
     font-size: 2rem;
-    max-width: 70%;
+    max-width: 75%;
     margin-top: 50px;
     margin-inline-start: centre;
     line-height: 1.5;
     color: white; /* Ensure contrast with background */
     text-align: justify;
     align-items: center;
-    margin-left: 250px;
+    margin-left: 220px;
 }
 
 
@@ -94,9 +98,9 @@
     align-items: flex-start; /* Ensures text remains left-aligned */
     padding: 80px; /* Consistent side margins */
     box-sizing: border-box;
-    margin-top: 500px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 700px;
+    margin-left: 80px;
+    margin-right: 80px;
     font-size: 3rem;
     
 }
@@ -104,9 +108,8 @@
 #academic-backing-section h2{
   font-weight: bold;
   font-size: 7rem; /* Adjust as needed */
-  margin-bottom: 100px; /* Reduce space between header and paragraph */
-  margin-left: 5px;
-  margin-top: 100px;
+  margin-bottom: 80px; /* Reduce space between header and paragraph */
+  margin-top: 145px;
   color: white;
   text-align: left;
 
@@ -165,7 +168,8 @@
   max-width: 20%;
   font-size: 3rem;
   color:#ff8cd1;
-  margin-top: 330px;
+  margin-top: 300px;
+  margin-bottom: 150px;
   text-align: justify;
 }
 
@@ -193,9 +197,9 @@
   font-weight: bold;
   font-size: 5rem; /* Adjust as needed */
   margin-bottom: 10px; /* Reduce space between header and paragraph */
-  margin-top: 100px;
+  margin-top: 80px;
   color: white;
-  margin-left: 1200px;
+  margin-left: 1170px;
 }
 
 .right-subtitle {
@@ -203,7 +207,7 @@
   line-height: 1.6;
   color: #ffffff;
   font-style: italic; /* Optional, if you want to differentiate it */
-  margin-left: 1200px;
+  margin-left: 1170px;
   margin-bottom: 50px;
 }
 
@@ -235,7 +239,7 @@
   font-size: 3rem;
   color:#ff8cd1;
   text-align: justify;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 
@@ -272,14 +276,14 @@
     padding: 80px; /* Consistent side margins */
     box-sizing: border-box;
     margin-left: 90px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 /* Bold and left-align section headers */
 #see-more-section .section-heading {
     font-weight: bold;
     font-size: 7rem; /* Adjust as needed */
-    margin-bottom: 50px; /* Reduce space between header and paragraph */
+    margin-bottom: 80px; /* Reduce space between header and paragraph */
     margin-top: 100px;
     color: white;
 }
@@ -288,7 +292,7 @@
     font-size: 2rem;
     max-width: 90%;
     margin-top: 1px;
-    line-height: 1.5;
+    line-height: 0.5;
     color: white; /* Ensure contrast with background */
 }
 
