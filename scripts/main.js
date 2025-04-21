@@ -85,4 +85,15 @@ function revealSubheadings() {
   });
 
 
-  
+  const video = document.querySelector('.home-video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause(); // Optional: pause when out of view
+      }
+    });
+  }, { threshold: 0.5 }); // Adjust this threshold to control when it triggers
+
+  observer.observe(document.querySelector('.home-video-container'));
